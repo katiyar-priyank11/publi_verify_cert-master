@@ -5,7 +5,7 @@ const certRouter = require("../api/routes/cert.js");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const dbUrl ="mongodb+srv://priyank_katiyar:<Happy11%40>@cluster0.jm6kq9d.mongodb.net/test"
+const dbUrl ="mongodb+srv://priyank11:Happy11@cluster0.pstkgw5.mongodb.net/test"
 const cors =require("cors")
 
 app.use(cors())
