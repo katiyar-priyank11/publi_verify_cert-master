@@ -5,6 +5,6 @@ module.exports = defineConfig({
 
 module.exports = {
   devServer: {
-    disableHostCheck: true
+    public: 'subdomain.domain.ext:port'
   }
-}
+};
