@@ -4,10 +4,10 @@
       <div class="admin">
         <div class="login">
           <input type="text" placeholder="Enter Name" v-model="name" />
-          <input type="text" placeholder="Enter Email" v-model="email" />
+          <input type="email" placeholder="Enter Email" v-model="email" />
           <input type="password" placeholder="Enter Password" v-model="password" />
           <button v-on:click="signup()">Sign Up</button>
-          <span class="none">Already Registered ? </span>
+          <span class="none">Already Registered? </span>
           <router-link to="/admin">  <span class="blue">Login</span></router-link>
         </div>
     
@@ -28,21 +28,21 @@
         return {
           name: "",
           email: "",
-          password: "",
+          password: ""
         };
       },
       methods: {
         async signup() {
-            console.log("priyank")
+          console.log("priyank")
           let result = await axios.post(
             `http://localhost:4000/users/`,{name:this.name,email:this.email,password:this.password}
           );
           if (result.status == 201) {
-            alert("User created Successfully")
+            alert("User Created Successfully")
             this.$router.push({ name:'Admin' });
           }
           else{
-            alert("user already exist")
+            alert("user already exists")
           }
         },
       },

@@ -4,7 +4,7 @@
     <div class="public">
       <div id="public">
         <h1>
-          Welcome to Public Verify Certificate,
+          Welcome to Public Verify Certificate
           <h6>
             ------------------------------------------------------------------------------
           </h6>
@@ -13,7 +13,7 @@
       </div>
       <div id="public_srch">
         <div class="search">
-          <h2>Verify Certificates Here</h2>
+          <h2>Verify Your Certificates Here</h2>
           <div>
             <input
               id="CertificateId"
