@@ -33,7 +33,7 @@
     },
     methods: {
       async signup() {
-        let result = await axios.post("http://localhost:4000/certs/certs/", {
+        let result = await axios.post("http://localhost:4000/certs/", {
           name: this.name,
           course: this.course,
           email: this.email,

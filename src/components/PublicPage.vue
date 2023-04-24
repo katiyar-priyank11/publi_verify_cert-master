@@ -51,7 +51,7 @@ export default {
   methods: {
     async search() {
       let result = await axios.get(
-        `http://localhost:4000/certs/certs/${this.certId}`
+        `http://localhost:4000/certs/${this.certId}`
       );
       if (result.status == 200) {
         localStorage.clear();

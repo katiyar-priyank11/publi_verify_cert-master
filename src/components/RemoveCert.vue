@@ -28,7 +28,7 @@ export default {
   methods: {
     async delCert() {
       let result = await axios.delete(
-        `http://localhost:4000/certs/certs/${this.rollNo}`
+        `http://localhost:4000/certs/${this.rollNo}`
       );
       if (result.status == 200) {
         alert("Certificate Deleted");
